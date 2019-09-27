@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/mateus/Documents/NoPonto/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rGB/values-en-rGB.xml",
+            "outputFile": "/home/mateus/Documents/GitHub/NoPonto/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rGB/values-en-rGB.xml",
             "map": [
                 {
                     "source": "/home/mateus/.gradle/caches/transforms-2/files-2.1/1fee087fd54e4a2197c665be1a2a3b7a/res/values-en-rGB/values.xml",

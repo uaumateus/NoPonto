@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/mateus/Documents/NoPonto/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/home/mateus/Documents/GitHub/NoPonto/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "/home/mateus/.gradle/caches/transforms-2/files-2.1/7d4c0ab55a4dbcfb5113a392c72c21f6/res/values-night-v8/values-night-v8.xml",

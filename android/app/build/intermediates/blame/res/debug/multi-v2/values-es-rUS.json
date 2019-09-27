@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/mateus/Documents/NoPonto/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es-rUS/values-es-rUS.xml",
+            "outputFile": "/home/mateus/Documents/GitHub/NoPonto/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es-rUS/values-es-rUS.xml",
             "map": [
                 {
                     "source": "/home/mateus/.gradle/caches/transforms-2/files-2.1/5b33a0b8f7ee607bd7550340b3b60dee/res/values-es-rUS/values-es-rUS.xml",
