@@ -7,6 +7,7 @@ INJECTED from /home/mateus/Documents/GitHub/NoPonto/android/app/src/main/Android
 MERGED from /home/mateus/Documents/GitHub/NoPonto/android/app/src/main/AndroidManifest.xml:1:1-32:12
 MERGED from [:react-native-maps] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-12:12
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/f7e537df397d3e5f5f05244ea6808673/AndroidManifest.xml:17:1-32:12
+MERGED from [:react-native-boundary] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-boundary/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-30:12
 MERGED from [:react-native-geolocation-service] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-geolocation-service/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
 MERGED from [com.google.android.gms:play-services-location:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/ab675478a08473be5d0a7a42074e42f2/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/08ecd7e7be1d9e46fc388ffd64a18db1/AndroidManifest.xml:17:1-29:12
@@ -85,6 +86,8 @@ MERGED from [:react-native-geolocation-service] /home/mateus/Documents/GitHub/No
 		ADDED from /home/mateus/Documents/GitHub/NoPonto/android/app/src/main/AndroidManifest.xml:4:22-64
 uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from /home/mateus/Documents/GitHub/NoPonto/android/app/src/main/AndroidManifest.xml:5:5-79
+MERGED from [:react-native-boundary] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-boundary/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-79
+MERGED from [:react-native-boundary] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-boundary/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-79
 MERGED from [:react-native-geolocation-service] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-geolocation-service/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-79
 MERGED from [:react-native-geolocation-service] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-geolocation-service/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-79
 	android:name
@@ -95,6 +98,8 @@ MERGED from /home/mateus/Documents/GitHub/NoPonto/android/app/src/main/AndroidMa
 MERGED from /home/mateus/Documents/GitHub/NoPonto/android/app/src/main/AndroidManifest.xml:7:5-30:19
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/f7e537df397d3e5f5f05244ea6808673/AndroidManifest.xml:30:5-20
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/f7e537df397d3e5f5f05244ea6808673/AndroidManifest.xml:30:5-20
+MERGED from [:react-native-boundary] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-boundary/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-28:19
+MERGED from [:react-native-boundary] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-boundary/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-28:19
 MERGED from [com.google.android.gms:play-services-location:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/ab675478a08473be5d0a7a42074e42f2/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-location:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/ab675478a08473be5d0a7a42074e42f2/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/08ecd7e7be1d9e46fc388ffd64a18db1/AndroidManifest.xml:22:5-27:19
@@ -179,6 +184,8 @@ MERGED from [:react-native-maps] /home/mateus/Documents/GitHub/NoPonto/node_modu
 MERGED from [:react-native-maps] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/f7e537df397d3e5f5f05244ea6808673/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/f7e537df397d3e5f5f05244ea6808673/AndroidManifest.xml:20:5-44
+MERGED from [:react-native-boundary] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-boundary/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-boundary] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-boundary/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-geolocation-service] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-geolocation-service/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-geolocation-service] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-geolocation-service/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.gms:play-services-location:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/ab675478a08473be5d0a7a42074e42f2/AndroidManifest.xml:5:5-44
@@ -301,6 +308,30 @@ ADDED from [com.google.android.gms:play-services-maps:15.0.1] /home/mateus/.grad
 		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/f7e537df397d3e5f5f05244ea6808673/AndroidManifest.xml:27:9-41
 	android:required
 		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/f7e537df397d3e5f5f05244ea6808673/AndroidManifest.xml:28:9-32
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [:react-native-boundary] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-boundary/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-68
+	android:name
+		ADDED from [:react-native-boundary] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-boundary/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-65
+service#com.eddieowens.services.BoundaryEventJobIntentService
+ADDED from [:react-native-boundary] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-boundary/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:9-21:72
+	android:enabled
+		ADDED from [:react-native-boundary] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-boundary/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-35
+	android:exported
+		ADDED from [:react-native-boundary] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-boundary/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-36
+	android:permission
+		ADDED from [:react-native-boundary] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-boundary/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-69
+	android:name
+		ADDED from [:react-native-boundary] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-boundary/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-81
+service#com.eddieowens.services.BoundaryEventHeadlessTaskService
+ADDED from [:react-native-boundary] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-boundary/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:9-92
+	android:name
+		ADDED from [:react-native-boundary] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-boundary/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:18-89
+receiver#com.eddieowens.receivers.BoundaryEventBroadcastReceiver
+ADDED from [:react-native-boundary] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-boundary/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:9-27:38
+	android:enabled
+		ADDED from [:react-native-boundary] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-boundary/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-35
+	android:name
+		ADDED from [:react-native-boundary] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-boundary/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-83
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/08ecd7e7be1d9e46fc388ffd64a18db1/AndroidManifest.xml:23:9-26:75
 	android:exported

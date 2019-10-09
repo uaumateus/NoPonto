@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { View, Alert } from 'react-native';
 import MapView from 'react-native-maps';
 import Geolocation from 'react-native-geolocation-service';
+import Boundary, {Events} from 'react-native-boundary';
+
 import Search from '../Search';
 import Directions from '../Directions';
 
@@ -40,6 +42,33 @@ export default class Map extends Component {
                 title: data.structured_formatting.main_text,
             }
         });
+
+        this.playGeofence(latitude, longitude);
+    }
+
+    playGeofence = (latitude, longitude) =>  {
+        Boundary.add({
+          lat: latitude,
+          lng: longitude,
+          radius: 200, // metros
+          id: "Destination",
+        })
+          .then(() => console.log("success!"))
+          .catch(e => console.error("error :(", e));
+       
+        Boundary.on(Events.ENTER, id => {
+          Alert.alert("Você está chegando em seu destino!");
+        });
+    }
+      
+    componentWillUnmount() {
+        // Remove os eventos
+        Boundary.off(Events.ENTER)
+
+        // Remove o bondary
+        Boundary.remove('Destination')
+            .then(() => console.log('Goodbye Destination :('))
+            .catch(e => console.log('Failed to delete Destination :)', e))
     }
 
     render() {

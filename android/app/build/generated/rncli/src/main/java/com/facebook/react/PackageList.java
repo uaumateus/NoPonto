@@ -13,6 +13,8 @@ import java.util.ArrayList;
 import com.noponto.BuildConfig;
 import com.noponto.R;
 
+// react-native-boundary
+import com.eddieowens.RNBoundaryPackage;
 // react-native-geolocation-service
 import com.agontuk.RNFusedLocation.RNFusedLocationPackage;
 // react-native-maps
@@ -50,6 +52,7 @@ public class PackageList {
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(),
+      new RNBoundaryPackage(),
       new RNFusedLocationPackage(),
       new MapsPackage()
     ));

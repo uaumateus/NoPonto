@@ -19,6 +19,8 @@
         android:glEsVersion="0x00020000"
         android:required="true" />
 
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
     <application
         android:name="com.noponto.MainApplication"
         android:allowBackup="false"
@@ -44,7 +46,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" /> <!-- Services -->
+        <service
+            android:name="com.eddieowens.services.BoundaryEventJobIntentService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service android:name="com.eddieowens.services.BoundaryEventHeadlessTaskService" /> <!-- Receivers -->
+        <receiver
+            android:name="com.eddieowens.receivers.BoundaryEventBroadcastReceiver"
+            android:enabled="true" />
+
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"
