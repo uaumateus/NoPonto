@@ -11,6 +11,7 @@ MERGED from [:react-native-boundary] /home/mateus/Documents/GitHub/NoPonto/node_
 MERGED from [:react-native-geolocation-service] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-geolocation-service/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
 MERGED from [com.google.android.gms:play-services-location:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/ab675478a08473be5d0a7a42074e42f2/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/08ecd7e7be1d9e46fc388ffd64a18db1/AndroidManifest.xml:17:1-29:12
+MERGED from [:react-native-gesture-handler] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.60.5] /home/mateus/.gradle/caches/transforms-2/files-2.1/7b2a21c6da26a3980ab5111abfa48399/AndroidManifest.xml:2:1-13:12
 MERGED from [org.webkit:android-jsc:r245459] /home/mateus/.gradle/caches/transforms-2/files-2.1/39fda58c2e329fb78c08c4d57ca144af/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] /home/mateus/.gradle/caches/transforms-2/files-2.1/7d4c0ab55a4dbcfb5113a392c72c21f6/AndroidManifest.xml:17:1-22:12
@@ -192,6 +193,8 @@ MERGED from [com.google.android.gms:play-services-location:16.0.0] /home/mateus/
 MERGED from [com.google.android.gms:play-services-location:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/ab675478a08473be5d0a7a42074e42f2/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/08ecd7e7be1d9e46fc388ffd64a18db1/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/08ecd7e7be1d9e46fc388ffd64a18db1/AndroidManifest.xml:20:5-44
+MERGED from [:react-native-gesture-handler] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.60.5] /home/mateus/.gradle/caches/transforms-2/files-2.1/7b2a21c6da26a3980ab5111abfa48399/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.60.5] /home/mateus/.gradle/caches/transforms-2/files-2.1/7b2a21c6da26a3980ab5111abfa48399/AndroidManifest.xml:7:5-9:41
 MERGED from [org.webkit:android-jsc:r245459] /home/mateus/.gradle/caches/transforms-2/files-2.1/39fda58c2e329fb78c08c4d57ca144af/AndroidManifest.xml:7:5-9:41

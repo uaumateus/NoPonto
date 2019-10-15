@@ -17,6 +17,8 @@ import com.noponto.R;
 import com.eddieowens.RNBoundaryPackage;
 // react-native-geolocation-service
 import com.agontuk.RNFusedLocation.RNFusedLocationPackage;
+// react-native-gesture-handler
+import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 // react-native-maps
 import com.airbnb.android.react.maps.MapsPackage;
 
@@ -54,6 +56,7 @@ public class PackageList {
       new MainReactPackage(),
       new RNBoundaryPackage(),
       new RNFusedLocationPackage(),
+      new RNGestureHandlerPackage(),
       new MapsPackage()
     ));
   }

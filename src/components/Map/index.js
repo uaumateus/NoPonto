@@ -2,17 +2,20 @@ import React, { Component } from 'react';
 import { View, Alert } from 'react-native';
 import MapView from 'react-native-maps';
 import Geolocation from 'react-native-geolocation-service';
-import Boundary, {Events} from 'react-native-boundary';
 
 import Search from '../Search';
 import Directions from '../Directions';
 
 export default class Map extends Component {
-
-    state = {
-        region: null,
-        destination: null
+    constructor(props){
+        super(props);
+        this.state = {
+            region: null,
+            destination: null
+        }
+        this.onRegionChange = this.onRegionChange.bind(this);
     }
+    
 
     componentDidMount(){
         Geolocation.getCurrentPosition(
@@ -43,36 +46,16 @@ export default class Map extends Component {
             }
         });
 
-        this.playGeofence(latitude, longitude);
+        this.props.searchLocation(latitude, longitude);
     }
 
-    playGeofence = (latitude, longitude) =>  {
-        Boundary.add({
-          lat: latitude,
-          lng: longitude,
-          radius: 200, // metros
-          id: "Destination",
-        })
-          .then(() => console.log("success!"))
-          .catch(e => console.error("error :(", e));
-       
-        Boundary.on(Events.ENTER, id => {
-          Alert.alert("Você está chegando em seu destino!");
-        });
-    }
-      
-    componentWillUnmount() {
-        // Remove os eventos
-        Boundary.off(Events.ENTER)
-
-        // Remove o bondary
-        Boundary.remove('Destination')
-            .then(() => console.log('Goodbye Destination :('))
-            .catch(e => console.log('Failed to delete Destination :)', e))
+    onRegionChange(region) {
+        this.setState({ region });
     }
 
     render() {
         const { region, destination } = this.state;
+        const { searchInput } = this.props;
 
         return (
             <View style={{ flex: 1 }}>
@@ -81,6 +64,7 @@ export default class Map extends Component {
                     region={region}
                     showsUserLocation={true}
                     showsMyLocationButton={true}
+                    // onRegionChange={this.onRegionChange}
                     loadingEnable={true}
                     ref={el => this.mapView = el}
                 >
@@ -94,8 +78,10 @@ export default class Map extends Component {
                         />
                     }
                 </MapView>
-
-                <Search onLocationSelected={this.handleLocationSelected}/>
+                
+                {searchInput &&
+                    <Search onLocationSelected={this.handleLocationSelected}/>
+                }
             </View>
         );
     }

@@ -1,6 +1,13 @@
-import React from 'react';
-import Map from './components/Map';
+import React, {Component} from 'react';
+import Routes from './routes';
 
-const App = () => <Map />
+class App extends Component {
+    componentDidMount(){
+        console.disableYellowBox = true;
+    }
+    render(){
+        return <Routes />
+    }
+}
 
 export default App;

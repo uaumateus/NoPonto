@@ -1,4 +1,4 @@
-#Wed Oct 09 14:26:33 BRT 2019
+#Mon Oct 14 16:44:05 BRT 2019
 base.0=/home/mateus/Documents/GitHub/NoPonto/android/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex
