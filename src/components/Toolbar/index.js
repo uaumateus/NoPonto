@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Image, StyleSheet } from 'react-native';
-import { Header, Left, Button, Body, Icon, Right, Text, Title } from 'native-base';
+import { Header, Left, Button, Body, Right, Text, Title } from 'native-base';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import logo from '../../assets/logo.png';
 
 class Toolbar extends Component {
@@ -8,14 +9,21 @@ class Toolbar extends Component {
     return (   
         <Header style={styles.header}>
             <Left style={styles.leftContainer}>
-                <Button transparent>
-                    <Icon type="FontAwesome" name="arrow-left" style={{color: '#000'}}/>
-                </Button>
+                {this.props.back &&
+                    <Button transparent onPress={this.props.back}>
+                        <Icon size={25} name="arrow-back" style={{color: '#000'}}/>
+                    </Button>
+                }
             </Left>
             <Body style={styles.body}>
                 <Image source={logo} style={styles.logo}/>
             </Body>
             <Right style={styles.rightContainer}>
+                {this.props.onPressRight &&
+                    <Button transparent onPress={this.props.onPressRight}>
+                        <Icon size={25} name="replay" style={{color: '#000'}}/>
+                    </Button>
+                }
             </Right>
         </Header>
     );
@@ -32,7 +40,7 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     logo: {
-        height: 60,
+        height: 50,
         width: 150
     },
     leftContainer: {
@@ -42,7 +50,6 @@ const styles = StyleSheet.create({
     },
     rightContainer: {
         flex: 0,
-        paddingRight: 10,
         width: 50
     },
 });

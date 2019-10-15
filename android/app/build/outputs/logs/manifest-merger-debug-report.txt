@@ -5,8 +5,9 @@ INJECTED from /home/mateus/Documents/GitHub/NoPonto/android/app/src/main/Android
 INJECTED from /home/mateus/Documents/GitHub/NoPonto/android/app/src/main/AndroidManifest.xml:1:1-32:12
 INJECTED from /home/mateus/Documents/GitHub/NoPonto/android/app/src/main/AndroidManifest.xml:1:1-32:12
 MERGED from /home/mateus/Documents/GitHub/NoPonto/android/app/src/main/AndroidManifest.xml:1:1-32:12
+MERGED from [:react-native-vector-icons] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-maps] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-12:12
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/f7e537df397d3e5f5f05244ea6808673/AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/85539a40ea1f9449e0a972c92ae4ce09/AndroidManifest.xml:17:1-32:12
 MERGED from [:react-native-boundary] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-boundary/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-30:12
 MERGED from [:react-native-geolocation-service] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-geolocation-service/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
 MERGED from [com.google.android.gms:play-services-location:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/ab675478a08473be5d0a7a42074e42f2/AndroidManifest.xml:2:1-9:12
@@ -16,8 +17,8 @@ MERGED from [com.facebook.react:react-native:0.60.5] /home/mateus/.gradle/caches
 MERGED from [org.webkit:android-jsc:r245459] /home/mateus/.gradle/caches/transforms-2/files-2.1/39fda58c2e329fb78c08c4d57ca144af/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] /home/mateus/.gradle/caches/transforms-2/files-2.1/7d4c0ab55a4dbcfb5113a392c72c21f6/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/mateus/.gradle/caches/transforms-2/files-2.1/09234b1377cc1b25fe995ba951831968/AndroidManifest.xml:2:1-13:12
-MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/1bdd78fc26290785ec7df531eedab54e/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/e274cb21131a7637939a5c4c2a6a6404/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/1bdd78fc26290785ec7df531eedab54e/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/1fee087fd54e4a2197c665be1a2a3b7a/AndroidManifest.xml:17:1-28:12
 MERGED from [com.facebook.fresco:fresco:2.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/7df70d68ebbbcabf5f02c44722adb031/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/e9b323b104b17d31299e14c8c9ae755d/AndroidManifest.xml:2:1-9:12
@@ -33,6 +34,7 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/mateus
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/b048118212e3de2dbc1f201f817b0aa4/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/60264b45956f2d774d72bf323bfdc97f/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/d561d4f2aef68961bb1a41d4fa09bc87/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/f575913e42b4c7a6cb502bfac7c0a37e/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/409edd6217452a3b79591589e0ccaaaf/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/0e09a11301be768c801219c64a032686/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/f4091e732822c974d3861cbde1bb7ab5/AndroidManifest.xml:17:1-22:12
@@ -41,7 +43,6 @@ MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/mateus/.g
 MERGED from [androidx.customview:customview:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/b339ed62d7b368b83691ac0122c87213/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/2ae2c735bfb6b8b5cda8fd6dcff10c3f/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/7c4b3d9f1dbde879226c78f6f346a1df/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.media:media:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/f575913e42b4c7a6cb502bfac7c0a37e/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/5b33a0b8f7ee607bd7550340b3b60dee/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/e0bdf97ce4aa2b67ce868c8d04286bdd/AndroidManifest.xml:17:1-25:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/3295fc6d7f9d3b8d87e7fd758d1b6ec6/AndroidManifest.xml:17:1-22:12
@@ -50,10 +51,10 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /home/mateus/.gradle/cach
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/62ce7892377a2239b72e3312242936a2/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/30427e493b1f95ee7a46c51b266cd686/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/fe3c724b75e1e5d5f2d1c72d2849d346/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/3fc7410d5a36a012c163abf868cb0059/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/305c986bc0cf9d75c6edc00d2d8636a4/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/4cfc73d7b47fb3de788c936851eb586c/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/e180c025167393b8228ecb66e96cb3db/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/3fc7410d5a36a012c163abf868cb0059/AndroidManifest.xml:17:1-22:12
 MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/95fa55a2f239087620982f991f29152e/AndroidManifest.xml:2:1-9:12
 INJECTED from /home/mateus/Documents/GitHub/NoPonto/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 INJECTED from /home/mateus/Documents/GitHub/NoPonto/android/app/src/debug/AndroidManifest.xml:2:1-8:12
@@ -79,8 +80,8 @@ uses-permission#android.permission.INTERNET
 ADDED from /home/mateus/Documents/GitHub/NoPonto/android/app/src/main/AndroidManifest.xml:4:5-67
 MERGED from [:react-native-maps] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-67
 MERGED from [:react-native-maps] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-67
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/f7e537df397d3e5f5f05244ea6808673/AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/f7e537df397d3e5f5f05244ea6808673/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/85539a40ea1f9449e0a972c92ae4ce09/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/85539a40ea1f9449e0a972c92ae4ce09/AndroidManifest.xml:24:5-67
 MERGED from [:react-native-geolocation-service] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-geolocation-service/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-67
 MERGED from [:react-native-geolocation-service] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-geolocation-service/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-67
 	android:name
@@ -97,8 +98,8 @@ application
 ADDED from /home/mateus/Documents/GitHub/NoPonto/android/app/src/main/AndroidManifest.xml:7:5-30:19
 MERGED from /home/mateus/Documents/GitHub/NoPonto/android/app/src/main/AndroidManifest.xml:7:5-30:19
 MERGED from /home/mateus/Documents/GitHub/NoPonto/android/app/src/main/AndroidManifest.xml:7:5-30:19
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/f7e537df397d3e5f5f05244ea6808673/AndroidManifest.xml:30:5-20
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/f7e537df397d3e5f5f05244ea6808673/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/85539a40ea1f9449e0a972c92ae4ce09/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/85539a40ea1f9449e0a972c92ae4ce09/AndroidManifest.xml:30:5-20
 MERGED from [:react-native-boundary] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-boundary/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-28:19
 MERGED from [:react-native-boundary] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-boundary/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-28:19
 MERGED from [com.google.android.gms:play-services-location:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/ab675478a08473be5d0a7a42074e42f2/AndroidManifest.xml:7:5-20
@@ -109,10 +110,10 @@ MERGED from [com.facebook.react:react-native:0.60.5] /home/mateus/.gradle/caches
 MERGED from [com.facebook.react:react-native:0.60.5] /home/mateus/.gradle/caches/transforms-2/files-2.1/7b2a21c6da26a3980ab5111abfa48399/AndroidManifest.xml:11:5-20
 MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/mateus/.gradle/caches/transforms-2/files-2.1/09234b1377cc1b25fe995ba951831968/AndroidManifest.xml:7:5-11:19
 MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/mateus/.gradle/caches/transforms-2/files-2.1/09234b1377cc1b25fe995ba951831968/AndroidManifest.xml:7:5-11:19
-MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/1bdd78fc26290785ec7df531eedab54e/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/1bdd78fc26290785ec7df531eedab54e/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/e274cb21131a7637939a5c4c2a6a6404/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/e274cb21131a7637939a5c4c2a6a6404/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/1bdd78fc26290785ec7df531eedab54e/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/1bdd78fc26290785ec7df531eedab54e/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/1fee087fd54e4a2197c665be1a2a3b7a/AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/1fee087fd54e4a2197c665be1a2a3b7a/AndroidManifest.xml:22:5-26:19
 MERGED from [com.facebook.soloader:soloader:0.6.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/d19b995a9002de1bbd6fd18e4b2e9f2e/AndroidManifest.xml:11:5-20
@@ -181,10 +182,12 @@ uses-sdk
 INJECTED from /home/mateus/Documents/GitHub/NoPonto/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/mateus/Documents/GitHub/NoPonto/android/app/src/main/AndroidManifest.xml
 INJECTED from /home/mateus/Documents/GitHub/NoPonto/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-vector-icons] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-maps] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-maps] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/f7e537df397d3e5f5f05244ea6808673/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/f7e537df397d3e5f5f05244ea6808673/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/85539a40ea1f9449e0a972c92ae4ce09/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/85539a40ea1f9449e0a972c92ae4ce09/AndroidManifest.xml:20:5-44
 MERGED from [:react-native-boundary] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-boundary/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-boundary] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-boundary/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-geolocation-service] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-geolocation-service/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
@@ -203,10 +206,10 @@ MERGED from [androidx.appcompat:appcompat:1.0.2] /home/mateus/.gradle/caches/tra
 MERGED from [androidx.appcompat:appcompat:1.0.2] /home/mateus/.gradle/caches/transforms-2/files-2.1/7d4c0ab55a4dbcfb5113a392c72c21f6/AndroidManifest.xml:20:5-44
 MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/mateus/.gradle/caches/transforms-2/files-2.1/09234b1377cc1b25fe995ba951831968/AndroidManifest.xml:5:5-43
 MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/mateus/.gradle/caches/transforms-2/files-2.1/09234b1377cc1b25fe995ba951831968/AndroidManifest.xml:5:5-43
-MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/1bdd78fc26290785ec7df531eedab54e/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/1bdd78fc26290785ec7df531eedab54e/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/e274cb21131a7637939a5c4c2a6a6404/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/e274cb21131a7637939a5c4c2a6a6404/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/1bdd78fc26290785ec7df531eedab54e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/1bdd78fc26290785ec7df531eedab54e/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/1fee087fd54e4a2197c665be1a2a3b7a/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/1fee087fd54e4a2197c665be1a2a3b7a/AndroidManifest.xml:20:5-44
 MERGED from [com.facebook.fresco:fresco:2.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/7df70d68ebbbcabf5f02c44722adb031/AndroidManifest.xml:5:5-7:41
@@ -237,6 +240,8 @@ MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/mateus/.grad
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/60264b45956f2d774d72bf323bfdc97f/AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/d561d4f2aef68961bb1a41d4fa09bc87/AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/d561d4f2aef68961bb1a41d4fa09bc87/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/f575913e42b4c7a6cb502bfac7c0a37e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/f575913e42b4c7a6cb502bfac7c0a37e/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/409edd6217452a3b79591589e0ccaaaf/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/409edd6217452a3b79591589e0ccaaaf/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/0e09a11301be768c801219c64a032686/AndroidManifest.xml:20:5-44
@@ -253,8 +258,6 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/mateus/
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/2ae2c735bfb6b8b5cda8fd6dcff10c3f/AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/7c4b3d9f1dbde879226c78f6f346a1df/AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/7c4b3d9f1dbde879226c78f6f346a1df/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/f575913e42b4c7a6cb502bfac7c0a37e/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/f575913e42b4c7a6cb502bfac7c0a37e/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/5b33a0b8f7ee607bd7550340b3b60dee/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/5b33a0b8f7ee607bd7550340b3b60dee/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/e0bdf97ce4aa2b67ce868c8d04286bdd/AndroidManifest.xml:20:5-44
@@ -271,14 +274,14 @@ MERGED from [androidx.print:print:1.0.0] /home/mateus/.gradle/caches/transforms-
 MERGED from [androidx.print:print:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/30427e493b1f95ee7a46c51b266cd686/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/fe3c724b75e1e5d5f2d1c72d2849d346/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/fe3c724b75e1e5d5f2d1c72d2849d346/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/3fc7410d5a36a012c163abf868cb0059/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/3fc7410d5a36a012c163abf868cb0059/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/305c986bc0cf9d75c6edc00d2d8636a4/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/305c986bc0cf9d75c6edc00d2d8636a4/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/4cfc73d7b47fb3de788c936851eb586c/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/4cfc73d7b47fb3de788c936851eb586c/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/e180c025167393b8228ecb66e96cb3db/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/e180c025167393b8228ecb66e96cb3db/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/3fc7410d5a36a012c163abf868cb0059/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/3fc7410d5a36a012c163abf868cb0059/AndroidManifest.xml:20:5-44
 MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/95fa55a2f239087620982f991f29152e/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/95fa55a2f239087620982f991f29152e/AndroidManifest.xml:5:5-7:41
 INJECTED from /home/mateus/Documents/GitHub/NoPonto/android/app/src/debug/AndroidManifest.xml
@@ -300,17 +303,17 @@ MERGED from [:react-native-geolocation-service] /home/mateus/Documents/GitHub/No
 	android:name
 		ADDED from [:react-native-maps] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:22-78
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.gms:play-services-maps:15.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/f7e537df397d3e5f5f05244ea6808673/AndroidManifest.xml:23:5-79
+ADDED from [com.google.android.gms:play-services-maps:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/85539a40ea1f9449e0a972c92ae4ce09/AndroidManifest.xml:23:5-79
 MERGED from [:react-native-geolocation-service] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-geolocation-service/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-79
 MERGED from [:react-native-geolocation-service] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-geolocation-service/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-79
 	android:name
-		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/f7e537df397d3e5f5f05244ea6808673/AndroidManifest.xml:23:22-76
+		ADDED from [com.google.android.gms:play-services-maps:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/85539a40ea1f9449e0a972c92ae4ce09/AndroidManifest.xml:23:22-76
 uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:15.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/f7e537df397d3e5f5f05244ea6808673/AndroidManifest.xml:26:5-28:35
+ADDED from [com.google.android.gms:play-services-maps:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/85539a40ea1f9449e0a972c92ae4ce09/AndroidManifest.xml:26:5-28:35
 	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/f7e537df397d3e5f5f05244ea6808673/AndroidManifest.xml:27:9-41
+		ADDED from [com.google.android.gms:play-services-maps:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/85539a40ea1f9449e0a972c92ae4ce09/AndroidManifest.xml:27:9-41
 	android:required
-		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /home/mateus/.gradle/caches/transforms-2/files-2.1/f7e537df397d3e5f5f05244ea6808673/AndroidManifest.xml:28:9-32
+		ADDED from [com.google.android.gms:play-services-maps:16.0.0] /home/mateus/.gradle/caches/transforms-2/files-2.1/85539a40ea1f9449e0a972c92ae4ce09/AndroidManifest.xml:28:9-32
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [:react-native-boundary] /home/mateus/Documents/GitHub/NoPonto/node_modules/react-native-boundary/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-68
 	android:name

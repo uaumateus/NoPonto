@@ -2197,6 +2197,25 @@
                     }
                 },
                 {
+                    "source": "/home/mateus/.gradle/caches/transforms-2/files-2.1/85539a40ea1f9449e0a972c92ae4ce09/res/values/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "165",
+                        "endLines": "60",
+                        "endColumns": "20",
+                        "endOffsets": "1514"
+                    },
+                    "to": {
+                        "startLines": "3038",
+                        "startColumns": "4",
+                        "startOffsets": "190823",
+                        "endLines": "3094",
+                        "endColumns": "20",
+                        "endOffsets": "192172"
+                    }
+                },
+                {
                     "source": "/home/mateus/Documents/GitHub/NoPonto/android/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "3",
@@ -2230,25 +2249,6 @@
                         "startOffsets": "15374,15438",
                         "endColumns": "63,68",
                         "endOffsets": "15433,15502"
-                    }
-                },
-                {
-                    "source": "/home/mateus/.gradle/caches/transforms-2/files-2.1/f7e537df397d3e5f5f05244ea6808673/res/values/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "165",
-                        "endLines": "60",
-                        "endColumns": "20",
-                        "endOffsets": "1514"
-                    },
-                    "to": {
-                        "startLines": "3038",
-                        "startColumns": "4",
-                        "startOffsets": "190823",
-                        "endLines": "3094",
-                        "endColumns": "20",
-                        "endOffsets": "192172"
                     }
                 }
             ]

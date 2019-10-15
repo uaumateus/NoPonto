@@ -17,7 +17,7 @@ export default class SimpleModal extends Component {
             <Modal animationType={"fade"} transparent={true} visible={show}>
                 <View style={styles.modal}>
                     <View style={styles.container}>
-                        <Text>Você será alertado quando estiver à 200 metros de seu destino!</Text>
+                        <Text>{this.props.message}</Text>
                         <Button rounded onPress={this.toggleModal} style={styles.button}>
                             <Text style={{width: '100%', textAlign: 'center'}}>Ok</Text>
                         </Button>

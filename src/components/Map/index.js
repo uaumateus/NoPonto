@@ -46,7 +46,7 @@ export default class Map extends Component {
             }
         });
 
-        this.props.searchLocation(latitude, longitude);
+        this.props.searchLocation(latitude, longitude, data.description);
     }
 
     onRegionChange(region) {

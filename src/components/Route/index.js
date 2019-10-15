@@ -1,14 +1,9 @@
 import React, {Component} from 'react';
 import { View, StyleSheet } from 'react-native';
-import { Text, Grid, Col, Row, Icon, Accordion } from 'native-base';
+import { Text, Grid, Col, Row, Accordion } from 'native-base';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import GlobalStyles from '../../global';
-
-const dataArray = [
-    { title: "First Element", content: "Lorem ipsum dolor sit amet" },
-    { title: "Second Element", content: "Lorem ipsum dolor sit amet" },
-    { title: "Third Element", content: "Lorem ipsum dolor sit amet" }
-  ];
 
 class Route extends Component {
     _renderHeader(item, expanded) {
@@ -17,33 +12,42 @@ class Route extends Component {
             <Grid>
                 <Row>
                     <Col>
-                        <Text style={styles.title}>Casa</Text>
+                        <Text style={styles.title}>{item.name}</Text>
                     </Col>
                 </Row>
                 <Row>
-                    <Text style={styles.infos}>Partida: Mercado Central</Text>
-                </Row>
-                <Row>
-                    <Text style={styles.infos}>Destino: Dragão do Mar</Text>
+                    <Text style={styles.infos}>{"Destino: " + item.destination}</Text>
                 </Row>
             </Grid>
             {expanded
-              ? <Icon style={{ fontSize: 18 }} name="remove-circle" />
-              : <Icon style={{ fontSize: 18 }} name="add-circle" />}
+              ? <Icon size={25} name="arrow-drop-up" />
+              : <Icon size={25} name="arrow-drop-down" />}
           </View>
         );
       }
       _renderContent(item) {
         return (
-          <Text>
-            {item.content}
-          </Text>
+            <View style={styles.cardContent}>
+                <Grid>
+                    <Row>
+                        <Text style={styles.infosSecundary}>{"Alarmar em: " + item.distance + " metros."}</Text>
+                    </Row>
+                    <Row>
+                        {item.typeAlarm === "key0" &&
+                            <Text style={styles.infosSecundary}>{"Somente vibração"}</Text>
+                        }
+                        {item.typeAlarm === "key1" &&
+                            <Text style={styles.infosSecundary}>{"Vibrar e tocar"}</Text>
+                        }
+                    </Row>
+                </Grid>
+            </View>
         );
       }
     render(){
         return (
             <Accordion
-                dataArray={dataArray}
+                dataArray={this.props.data}
                 animation={true}
                 expanded={true}
                 renderHeader={this._renderHeader}
@@ -72,6 +76,18 @@ const styles = StyleSheet.create({
     body: {
         width: '100%',
         alignItems: 'flex-start'
+    },
+    cardContent: {
+        marginTop: -10,
+        backgroundColor: '#FFF',
+        paddingHorizontal: 15,
+        borderBottomWidth: 1,
+        borderBottomColor: '#d1d1d1',
+        paddingBottom: 10
+    },
+    infosSecundary: {
+        fontSize: 14,
+        color: '#AAA'
     }
 })
 

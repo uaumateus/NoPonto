@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, Alert } from 'react-native';
+import { View, StyleSheet, Alert, AsyncStorage } from 'react-native';
 import { Container, Text, Item, Label, Input, Grid, Row, Col, Button, Form, Picker } from 'native-base';
 import Boundary, {Events} from 'react-native-boundary';
 
@@ -11,12 +11,14 @@ export default class NewRoute extends Component {
 
   state = {
     step: 0,
+    name: '',
     selected: 200,
     selectedMode: 'key0',
     showModal: false,
     searchInput: true,
     latitude: null,
-    longitude: null
+    longitude: null,
+    description: null
   }
 
   nextStep = () => {
@@ -33,7 +35,7 @@ export default class NewRoute extends Component {
     this.setState({
       selectedMode: value
     });
-  }lat
+  }
 
   handleModal = () => {
     this.setState({ showModal: true });
@@ -42,43 +44,77 @@ export default class NewRoute extends Component {
   onChangeState = () => {
     this.setState({ showModal: false });
     this.setState({step: this.state.step + 1, searchInput: false});
-    this.playGeofence(this.state.latitude, this.state.longitude);
+    this.createRoute();
+    // this.playGeofence(this.state.latitude, this.state.longitude);
   };
 
-  searchLocation = (latitude, longitude) => {
-    this.setState({latitude, longitude});
+  createRoute = async () => {
+    const exist = await AsyncStorage.getItem('@NoPonto:ROUTES');
+    let value;
+    if(exist !== null){
+      const aux = JSON.parse(exist);
+      value = { data: aux.data.concat({
+                        name: this.state.name,
+                        destination: this.state.description,
+                        distance: this.state.selected,
+                        typeAlarm: this.state.selectedMode  
+                      })
+              };
+    }else{
+      value = { data: [{
+              name: this.state.name,
+              destination: this.state.description,
+              distance: this.state.selected,
+              typeAlarm: this.state.selectedMode  
+            }]
+      }
+      
+    }
+    await AsyncStorage.setItem('@NoPonto:ROUTES', JSON.stringify(value));
   }
 
-  playGeofence = (latitude, longitude) =>  {
-      Boundary.add({
-        lat: latitude,
-        lng: longitude,
-        radius: 500, // metros
-        id: "Destination",
-      })
-        .then(() => console.log("success!"))
-        .catch(e => console.error("error :(", e));
-      Boundary.on(Events.ENTER, id => {
-        Alert.alert("Você está chegando em seu destino!");
-      });
+  saveRoutes = async (data) => {
+    await AsyncStorage.setItem('@NoPonto:ROUTES', JSON.stringify(data));
   }
+
+  searchLocation = (latitude, longitude, description) => {
+    this.setState({latitude, longitude, description});
+  }
+
+  onChangeName = e => {
+    this.setState({name: e});
+  }
+
+  // playGeofence = (latitude, longitude) =>  {
+  //     Boundary.add({
+  //       lat: latitude,
+  //       lng: longitude,
+  //       radius: 500, // metros
+  //       id: "Destination",
+  //     })
+  //       .then(() => console.log("success!"))
+  //       .catch(e => console.error("error :(", e));
+  //     Boundary.on(Events.ENTER, id => {
+  //       Alert.alert("Você está chegando em seu destino!");
+  //     });
+  // }
     
-  componentWillUnmount() {
-      // Remove os eventos
-      Boundary.off(Events.ENTER)
+  // componentWillUnmount() {
+  //     // Remove os eventos
+  //     Boundary.off(Events.ENTER)
 
-      // Remove o bondary
-      Boundary.remove('Destination')
-          .then(() => console.log('Goodbye Destination :('))
-          .catch(e => console.log('Failed to delete Destination :)', e))
-  }
+  //     // Remove o bondary
+  //     Boundary.remove('Destination')
+  //         .then(() => console.log('Goodbye Destination :('))
+  //         .catch(e => console.log('Failed to delete Destination :)', e))
+  // }
 
   render() {
-    let { step, searchInput } = this.state;
+    let { step, searchInput, selected, name } = this.state;
     return (
       <>
         <Container>
-          <Toolbar />
+          <Toolbar back={() => this.props.navigation.goBack()}/>
             <Grid>
               <Row>
                 <Map searchInput={searchInput} searchLocation={this.searchLocation} />
@@ -89,7 +125,7 @@ export default class NewRoute extends Component {
                     <Grid style={{alignItems: 'center'}}>
                       <Col>
                         <Item rounded style={styles.input}>
-                          <Input placeholder='Nome da rota'/>
+                          <Input placeholder='Nome da rota' value={name} onChangeText={(val) => this.onChangeName(val)}/>
                         </Item>
                       </Col>
                       <Col style={{width: 40, marginLeft: 10}}>
@@ -148,6 +184,7 @@ export default class NewRoute extends Component {
         <SimpleModal 
           show={this.state.showModal}
           onChangeState={this.onChangeState}
+          message={"Você será alertado quando estiver à " + selected + " metros de seu destino!"}
         />
       </>
     );
