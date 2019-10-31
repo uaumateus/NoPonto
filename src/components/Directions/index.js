@@ -9,6 +9,7 @@ const Directions = ({ destination, origin, onReady }) => (
         apikey="AIzaSyD1uf9mIGakaIN7qWg1tiMHdXi1BnK4Fwc"
         strokeWidth={2}
         strokeColor="#3299CC"
+        resetOnChange={true}
     />
 );
 

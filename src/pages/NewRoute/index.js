@@ -45,7 +45,7 @@ export default class NewRoute extends Component {
     this.setState({ showModal: false });
     this.setState({step: this.state.step + 1, searchInput: false});
     this.createRoute();
-    // this.playGeofence(this.state.latitude, this.state.longitude);
+    this.playGeofence(this.state.latitude, this.state.longitude);
   };
 
   createRoute = async () => {
@@ -85,29 +85,29 @@ export default class NewRoute extends Component {
     this.setState({name: e});
   }
 
-  // playGeofence = (latitude, longitude) =>  {
-  //     Boundary.add({
-  //       lat: latitude,
-  //       lng: longitude,
-  //       radius: 500, // metros
-  //       id: "Destination",
-  //     })
-  //       .then(() => console.log("success!"))
-  //       .catch(e => console.error("error :(", e));
-  //     Boundary.on(Events.ENTER, id => {
-  //       Alert.alert("Você está chegando em seu destino!");
-  //     });
-  // }
+  playGeofence = (latitude, longitude) =>  {
+      Boundary.add({
+        lat: latitude,
+        lng: longitude,
+        radius: 800, // metros
+        id: "Destination",
+      })
+        .then(() => console.log("success!"))
+        .catch(e => console.error("error :(", e));
+      Boundary.on(Events.ENTER, id => {
+        Alert.alert("Você está chegando em seu destino!");
+      });
+  }
     
-  // componentWillUnmount() {
-  //     // Remove os eventos
-  //     Boundary.off(Events.ENTER)
+  componentWillUnmount() {
+      // Remove os eventos
+      Boundary.off(Events.ENTER)
 
-  //     // Remove o bondary
-  //     Boundary.remove('Destination')
-  //         .then(() => console.log('Goodbye Destination :('))
-  //         .catch(e => console.log('Failed to delete Destination :)', e))
-  // }
+      // Remove o bondary
+      Boundary.remove('Destination')
+          .then(() => console.log('Goodbye Destination :('))
+          .catch(e => console.log('Failed to delete Destination :)', e))
+  }
 
   render() {
     let { step, searchInput, selected, name } = this.state;
