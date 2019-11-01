@@ -30,7 +30,6 @@ export default class NewRoute extends Component {
 
   nextStep = () => {
     this.setState({step: this.state.step + 1});
-    this.notif.inDestiny()
   }
 
   onValueChange(value) {
@@ -97,13 +96,13 @@ export default class NewRoute extends Component {
       Boundary.add({
         lat: latitude,
         lng: longitude,
-        radius: 800, // metros
+        radius: this.state.selected, // metros
         id: "Destination",
       })
         .then(() => console.log("success!"))
         .catch(e => console.error("error :(", e));
       Boundary.on(Events.ENTER, id => {
-        Alert.alert("Você está chegando em seu destino!");
+        this.notif.inDestiny(this.state.selected);
       });
   }
 
@@ -115,6 +114,7 @@ export default class NewRoute extends Component {
 
   onNotif(notif) {
     Vibration.cancel();
+    this.notif.cancelAll();
   }
 
   handlePerm(perms) {
