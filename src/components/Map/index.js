@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { View, Alert } from 'react-native';
-import MapView, { Polyline } from 'react-native-maps';
+import { View,  } from 'react-native';
+import MapView from 'react-native-maps';
 import MapViewDirections from 'react-native-maps-directions';
 import Geolocation from 'react-native-geolocation-service';
 

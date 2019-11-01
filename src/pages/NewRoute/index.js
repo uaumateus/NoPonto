@@ -1,28 +1,36 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, Alert, AsyncStorage } from 'react-native';
+import { View, StyleSheet, Alert, AsyncStorage, Vibration } from 'react-native';
 import { Container, Text, Item, Label, Input, Grid, Row, Col, Button, Form, Picker } from 'native-base';
 import Boundary, {Events} from 'react-native-boundary';
 
+import NotifService from '../../notifService';
+import appConfig from '../../../app.json';
 import Map from '../../components/Map';
 import Toolbar from '../../components/Toolbar';
 import SimpleModal from '../../components/Modals/SimpleModal';
 
 export default class NewRoute extends Component {
 
-  state = {
-    step: 0,
-    name: '',
-    selected: 200,
-    selectedMode: 'key0',
-    showModal: false,
-    searchInput: true,
-    latitude: null,
-    longitude: null,
-    description: null
+  constructor(props) {
+    super(props);
+    this.state = {
+      senderId: appConfig.senderID,
+      step: 0,
+      name: '',
+      selected: 200,
+      selectedMode: 'key0',
+      showModal: false,
+      searchInput: true,
+      latitude: null,
+      longitude: null,
+      description: null
+    };
+    this.notif = new NotifService(this.onRegister.bind(this), this.onNotif.bind(this));
   }
 
   nextStep = () => {
     this.setState({step: this.state.step + 1});
+    this.notif.inDestiny()
   }
 
   onValueChange(value) {
@@ -97,6 +105,20 @@ export default class NewRoute extends Component {
       Boundary.on(Events.ENTER, id => {
         Alert.alert("Você está chegando em seu destino!");
       });
+  }
+
+  onRegister(token) {
+    Alert.alert("Registered !", JSON.stringify(token));
+    console.log(token);
+    this.setState({ registerToken: token.token, gcmRegistered: true });
+  }
+
+  onNotif(notif) {
+    Vibration.cancel();
+  }
+
+  handlePerm(perms) {
+    Alert.alert("Permissions", JSON.stringify(perms));
   }
     
   componentWillUnmount() {

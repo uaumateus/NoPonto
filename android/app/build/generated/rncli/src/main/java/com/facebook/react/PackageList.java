@@ -21,6 +21,8 @@ import com.agontuk.RNFusedLocation.RNFusedLocationPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 // react-native-maps
 import com.airbnb.android.react.maps.MapsPackage;
+// react-native-push-notification
+import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;
 // react-native-vector-icons
 import com.oblador.vectoricons.VectorIconsPackage;
 
@@ -60,6 +62,7 @@ public class PackageList {
       new RNFusedLocationPackage(),
       new RNGestureHandlerPackage(),
       new MapsPackage(),
+      new ReactNativePushNotificationPackage(),
       new VectorIconsPackage()
     ));
   }

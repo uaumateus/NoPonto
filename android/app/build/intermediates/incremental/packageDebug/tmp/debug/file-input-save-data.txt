@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Oct 15 00:29:08 BRT 2019
+#Fri Nov 01 15:55:13 BRT 2019
 60.set=NATIVE_RESOURCE
 52.set=NATIVE_RESOURCE
 53.base=/home/mateus/Documents/GitHub/NoPonto/android/app/build/intermediates/transforms/mergeJniLibs/debug/0
