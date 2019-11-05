@@ -42,7 +42,7 @@ export default class NotifService {
     });
   }
 
-  inDestiny(radius) {
+  inDestiny(radius, title) {
     this.lastId++;
     
     PushNotification.localNotification({
@@ -51,7 +51,7 @@ export default class NotifService {
       autoCancel: false, // (optional) default: true
       largeIcon: "ic_launcher", // (optional) default: "ic_launcher"
       smallIcon: "ic_notification", // (optional) default: "ic_notification" with fallback for "ic_launcher"
-      bigText: "Faltam " + radius + " metros para você chegar em Pontes Vieira", // (optional) default: "message" prop
+      bigText: "Faltam " + radius + " metros para você chegar em " + title, // (optional) default: "message" prop
       subText: "Alarme", // (optional) default: none
       color: "#3F51B5", // (optional) default: system default
       vibrate: true, // (optional) default: true

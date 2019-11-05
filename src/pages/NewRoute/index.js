@@ -20,10 +20,12 @@ export default class NewRoute extends Component {
       selected: 200,
       selectedMode: 'key0',
       showModal: false,
+      showModalDestiny: false,
       searchInput: true,
       latitude: null,
       longitude: null,
-      description: null
+      description: null,
+      titleDestiny: ''
     };
     this.notif = new NotifService(this.onRegister.bind(this), this.onNotif.bind(this));
   }
@@ -46,6 +48,10 @@ export default class NewRoute extends Component {
 
   handleModal = () => {
     this.setState({ showModal: true });
+  };
+
+  handleModalDestiny = () => {
+    this.setState({ showModalDestiny: true });
   };
 
   onChangeState = () => {
@@ -102,7 +108,7 @@ export default class NewRoute extends Component {
         .then(() => console.log("success!"))
         .catch(e => console.error("error :(", e));
       Boundary.on(Events.ENTER, id => {
-        this.notif.inDestiny(this.state.selected);
+        this.notif.inDestiny(this.state.selected, this.state.titleDestiny);
       });
   }
 
@@ -115,6 +121,7 @@ export default class NewRoute extends Component {
   onNotif(notif) {
     Vibration.cancel();
     this.notif.cancelAll();
+    this.handleModalDestiny();
   }
 
   handlePerm(perms) {
@@ -131,15 +138,19 @@ export default class NewRoute extends Component {
           .catch(e => console.log('Failed to delete Destination :)', e))
   }
 
+  changeDestiny = (e) => {
+    this.setState({ titleDestiny: e });
+  }
+
   render() {
     let { step, searchInput, selected, name } = this.state;
     return (
       <>
         <Container>
-          <Toolbar back={() => this.props.navigation.goBack()}/>
+          <Toolbar back={() => this.props.navigation.navigate('Home')}/>
             <Grid>
               <Row>
-                <Map searchInput={searchInput} searchLocation={this.searchLocation} />
+                <Map searchInput={searchInput} searchLocation={this.searchLocation} changeDestiny={this.changeDestiny}/>
               </Row>
               {step === 0 &&
                 <Row style={styles.container}>
@@ -207,6 +218,12 @@ export default class NewRoute extends Component {
           show={this.state.showModal}
           onChangeState={this.onChangeState}
           message={"Você será alertado quando estiver à " + selected + " metros de seu destino!"}
+        />
+        <SimpleModal 
+          show={this.state.showModalDestiny}
+          onChangeState={this.handleModalDestiny}
+          message={"Você está chegando à " + this.state.selected + " metros de " + this.state.titleDestiny}
+          type="destiny"
         />
       </>
     );

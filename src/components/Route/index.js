@@ -1,12 +1,25 @@
 import React, {Component} from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, TouchableOpacity, AsyncStorage } from 'react-native';
 import { Text, Grid, Col, Row, Accordion } from 'native-base';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import GlobalStyles from '../../global';
 
 class Route extends Component {
+
+    
+
     _renderHeader(item, expanded) {
+        removeRoute = async () => {
+            let routes = await AsyncStorage.getItem('@NoPonto:ROUTES');
+            routes = JSON.parse(routes);
+            const teste = routes.data.findIndex((route, index, array) => route.name === item.name && route.destination === item.destination);
+            routes.data.splice(teste, 1);
+            this.updateRoutes(routes);
+        }
+        updateRoutes = async (e) => {
+            await AsyncStorage.setItem('@NoPonto:ROUTES', JSON.stringify(e));
+        }
         return (
           <View style={styles.card}>
             <Grid>
@@ -19,6 +32,7 @@ class Route extends Component {
                     <Text style={styles.infos}>{"Destino: " + item.destination}</Text>
                 </Row>
             </Grid>
+            <TouchableOpacity onPress={this.removeRoute}><Icon size={25} name="delete" /></TouchableOpacity>
             {expanded
               ? <Icon size={25} name="arrow-drop-up" />
               : <Icon size={25} name="arrow-drop-down" />}

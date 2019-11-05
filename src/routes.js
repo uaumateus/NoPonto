@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import NewRoute from './pages/NewRoute';
 
 const Routes = createAppContainer(
-    createStackNavigator({
+    createSwitchNavigator({
         Home,
         NewRoute
     }, {

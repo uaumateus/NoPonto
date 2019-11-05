@@ -14,6 +14,7 @@ export default class Home extends Component {
 
   componentDidMount = async () => {
     const value = await AsyncStorage.getItem('@NoPonto:ROUTES');
+    // console.log(value)
     if (value !== null) {
       this.setState({data: JSON.parse(value)})
     }

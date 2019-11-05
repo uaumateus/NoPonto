@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { View,  } from 'react-native';
-import MapView from 'react-native-maps';
+import { View } from 'react-native';
+import MapView, { Marker } from 'react-native-maps';
 import MapViewDirections from 'react-native-maps-directions';
 import Geolocation from 'react-native-geolocation-service';
 
@@ -24,7 +24,6 @@ export default class Map extends Component {
 
     handleLocationSelected = (data, { geometry }) => {
         const { location: { lat: latitude, lng: longitude } } = geometry;
-
         this.setState({
             destination: {
                 latitude,
@@ -32,7 +31,7 @@ export default class Map extends Component {
                 title: data.structured_formatting.main_text,
             }
         });
-
+        this.props.changeDestiny(data.structured_formatting.main_text);
         this.props.searchLocation(latitude, longitude, data.description);
     }
 
@@ -59,14 +58,13 @@ export default class Map extends Component {
     }
 
     render() {
-        const { region, destination } = this.state;
+        const { region, destination, title } = this.state;
         const { searchInput } = this.props;
 
         return (
             <View style={{ flex: 1 }}>
                 <MapView 
                     style={{ flex: 1 }}
-                    // region={region}
                     showsUserLocation={true}
                     showsMyLocationButton={true}
                     followsUserLocation={true}
@@ -92,9 +90,14 @@ export default class Map extends Component {
                                     this.mapView.fitToCoordinates(result.coordinates);
                                 } }
                                 apikey="AIzaSyD1uf9mIGakaIN7qWg1tiMHdXi1BnK4Fwc"
-                                strokeWidth={2}
+                                strokeWidth={0}
                                 strokeColor="#3299CC"
                                 resetOnChange={true}
+                            />
+                            <Marker
+                                coordinate={destination}
+                                title="Destino"
+                                description={destination.title}
                             />
                         </>
                     }
