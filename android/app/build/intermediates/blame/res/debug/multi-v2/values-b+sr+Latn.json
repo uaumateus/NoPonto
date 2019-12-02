@@ -21,13 +21,13 @@
                     }
                 },
                 {
-                    "source": "/home/mateus/.gradle/caches/transforms-2/files-2.1/e768110ab15cc11e322b9b4d6285e755/res/values-b+sr+Latn/values.xml",
+                    "source": "/home/mateus/.gradle/caches/transforms-2/files-2.1/09e7943934c85e7a01c282e34969c661/res/values-b+sr+Latn/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
-                        "startOffsets": "212",
+                        "startOffsets": "214",
                         "endColumns": "99",
-                        "endOffsets": "311"
+                        "endOffsets": "313"
                     },
                     "to": {
                         "startLines": "47",
@@ -35,6 +35,23 @@
                         "startOffsets": "5487",
                         "endColumns": "103",
                         "endOffsets": "5586"
+                    }
+                },
+                {
+                    "source": "/home/mateus/.gradle/caches/transforms-2/files-2.1/3f1dffe59cb32b94a830dad81b994f1e/res/values-b+sr+Latn/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "254",
+                        "endColumns": "188",
+                        "endOffsets": "442"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "3979",
+                        "endColumns": "188",
+                        "endOffsets": "4163"
                     }
                 },
                 {
@@ -52,23 +69,6 @@
                         "startOffsets": "5776",
                         "endColumns": "100",
                         "endOffsets": "5872"
-                    }
-                },
-                {
-                    "source": "/home/mateus/.gradle/caches/transforms-2/files-2.1/06971f763626802f868ff067a04de764/res/values-b+sr+Latn/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "254",
-                        "endColumns": "188",
-                        "endOffsets": "442"
-                    },
-                    "to": {
-                        "startLines": "37",
-                        "startColumns": "4",
-                        "startOffsets": "3979",
-                        "endColumns": "188",
-                        "endOffsets": "4163"
                     }
                 },
                 {

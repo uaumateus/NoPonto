@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { View, StyleSheet, TouchableOpacity, AsyncStorage } from 'react-native';
+import { View, StyleSheet, TouchableOpacity, AsyncStorage, Alert, ToastAndroid } from 'react-native';
 import { Text, Grid, Col, Row, Accordion } from 'native-base';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
@@ -7,18 +7,33 @@ import GlobalStyles from '../../global';
 
 class Route extends Component {
 
-    
-
     _renderHeader(item, expanded) {
-        removeRoute = async () => {
+        removeRoute = () => {
+            Alert.alert(
+                'Excluir rota',
+                'Deseja mesmo excluir essa rota?',
+                [
+                  {
+                    text: 'Não',
+                    onPress: () => console.log('Cancel Pressed'),
+                  },
+                  {text: 'Excluir', onPress: this.getRoutes},
+                ],
+                {cancelable: true},
+              );
+            
+        }
+        getRoutes = async () => {
             let routes = await AsyncStorage.getItem('@NoPonto:ROUTES');
             routes = JSON.parse(routes);
             const teste = routes.data.findIndex((route, index, array) => route.name === item.name && route.destination === item.destination);
             routes.data.splice(teste, 1);
             this.updateRoutes(routes);
+            
         }
         updateRoutes = async (e) => {
             await AsyncStorage.setItem('@NoPonto:ROUTES', JSON.stringify(e));
+            ToastAndroid.show('Rota excluída!', ToastAndroid.SHORT);
         }
         return (
           <View style={styles.card}>
@@ -27,15 +42,25 @@ class Route extends Component {
                     <Col>
                         <Text style={styles.title}>{item.name}</Text>
                     </Col>
+                    <Col style={styles.columnOptions}>
+                    <TouchableOpacity ><Icon size={25} name="play-arrow" style={{color: GlobalStyles.primaryColor, paddingLeft: 10}}/></TouchableOpacity>
+                        <TouchableOpacity onPress={this.removeRoute}><Icon size={25} name="delete" style={{color: '#e61919', paddingLeft: 10}}/></TouchableOpacity>
+                    </Col>
                 </Row>
                 <Row>
-                    <Text style={styles.infos}>{"Destino: " + item.destination}</Text>
+                    <Col>
+                        <Text style={styles.infos}>{"Destino: " + item.destination}</Text>
+                    </Col>
+                    <Col style={styles.columnArrow}>
+                        {expanded
+                        ? <Icon size={25} name="arrow-drop-up" />
+                        : <Icon size={25} name="arrow-drop-down" />}
+                    </Col>
+                    
                 </Row>
             </Grid>
-            <TouchableOpacity onPress={this.removeRoute}><Icon size={25} name="delete" /></TouchableOpacity>
-            {expanded
-              ? <Icon size={25} name="arrow-drop-up" />
-              : <Icon size={25} name="arrow-drop-down" />}
+            {/* <TouchableOpacity onPress={this.removeRoute}><Icon size={25} name="delete" /></TouchableOpacity> */}
+            
           </View>
         );
       }
@@ -102,6 +127,14 @@ const styles = StyleSheet.create({
     infosSecundary: {
         fontSize: 14,
         color: '#AAA'
+    },
+    columnOptions: {
+        flexDirection: "row",
+        justifyContent: "flex-end"
+    },
+    columnArrow: {
+        width: 'auto',
+        justifyContent: 'center'
     }
 })
 

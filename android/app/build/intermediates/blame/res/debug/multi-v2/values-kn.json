@@ -38,6 +38,23 @@
                     }
                 },
                 {
+                    "source": "/home/mateus/.gradle/caches/transforms-2/files-2.1/09e7943934c85e7a01c282e34969c661/res/values-kn/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "207",
+                        "endColumns": "98",
+                        "endOffsets": "305"
+                    },
+                    "to": {
+                        "startLines": "47",
+                        "startColumns": "4",
+                        "startOffsets": "5586",
+                        "endColumns": "102",
+                        "endOffsets": "5684"
+                    }
+                },
+                {
                     "source": "/home/mateus/.gradle/caches/transforms-2/files-2.1/69b432639e58630faf64a00cacf03ccd/res/values-kn/values.xml",
                     "from": {
                         "startLines": "4",
@@ -72,24 +89,7 @@
                     }
                 },
                 {
-                    "source": "/home/mateus/.gradle/caches/transforms-2/files-2.1/e768110ab15cc11e322b9b4d6285e755/res/values-kn/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "205",
-                        "endColumns": "98",
-                        "endOffsets": "303"
-                    },
-                    "to": {
-                        "startLines": "47",
-                        "startColumns": "4",
-                        "startOffsets": "5586",
-                        "endColumns": "102",
-                        "endOffsets": "5684"
-                    }
-                },
-                {
-                    "source": "/home/mateus/.gradle/caches/transforms-2/files-2.1/06971f763626802f868ff067a04de764/res/values-kn/values.xml",
+                    "source": "/home/mateus/.gradle/caches/transforms-2/files-2.1/3f1dffe59cb32b94a830dad81b994f1e/res/values-kn/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

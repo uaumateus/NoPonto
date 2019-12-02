@@ -34,7 +34,7 @@ export default class Home extends Component {
             <Toolbar onPressRight={this.reload}/>
             <Content>
               {data !== null ?
-                <Route data={data.data}/>
+                <Route data={data.data} reload={this.reload}/>
                 :
                 <Text style={{textAlign: 'center', marginTop: 10, color:"#AAA"}}>Você ainda não criou uma rota</Text>
               }

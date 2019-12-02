@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, StyleSheet, Alert, AsyncStorage, Vibration } from 'react-native';
 import { Container, Text, Item, Label, Input, Grid, Row, Col, Button, Form, Picker } from 'native-base';
 import Boundary, {Events} from 'react-native-boundary';
+import Geolocation from 'react-native-geolocation-service';
 
 import NotifService from '../../notifService';
 import appConfig from '../../../app.json';
@@ -18,20 +19,22 @@ export default class NewRoute extends Component {
       step: 0,
       name: '',
       selected: 200,
-      selectedMode: 'key0',
+      // selectedMode: 'key0',
       showModal: false,
       showModalDestiny: false,
       searchInput: true,
       latitude: null,
       longitude: null,
       description: null,
-      titleDestiny: ''
+      titleDestiny: '',
+      coords: {}
     };
     this.notif = new NotifService(this.onRegister.bind(this), this.onNotif.bind(this));
   }
 
   nextStep = () => {
-    this.setState({step: this.state.step + 1});
+    if(this.state.name !== '')
+      this.setState({step: this.state.step + 1});
   }
 
   onValueChange(value) {
@@ -40,14 +43,15 @@ export default class NewRoute extends Component {
     });
   }
 
-  onValueChangeMode(value) {
-    this.setState({
-      selectedMode: value
-    });
-  }
+  // onValueChangeMode(value) {
+  //   this.setState({
+  //     selectedMode: value
+  //   });
+  // }
 
   handleModal = () => {
     this.setState({ showModal: true });
+    this.getUserLocation();
   };
 
   handleModalDestiny = () => {
@@ -61,6 +65,12 @@ export default class NewRoute extends Component {
     this.playGeofence(this.state.latitude, this.state.longitude);
   };
 
+  getUserLocation = () =>{
+    Geolocation.getCurrentPosition(({ coords: { latitude, longitude } }) => {
+      this.setState({coords: {lat: latitude, lng: longitude}});
+    });
+  }
+
   createRoute = async () => {
     const exist = await AsyncStorage.getItem('@NoPonto:ROUTES');
     let value;
@@ -70,7 +80,11 @@ export default class NewRoute extends Component {
                         name: this.state.name,
                         destination: this.state.description,
                         distance: this.state.selected,
-                        typeAlarm: this.state.selectedMode  
+                        destinyLat: this.state.latitude,
+                        destinyLng: this.state.longitude,
+                        locationLat: this.state.coords.lat,
+                        locationLng: this.state.coords.lng
+                        // typeAlarm: this.state.selectedMode  
                       })
               };
     }else{
@@ -78,7 +92,11 @@ export default class NewRoute extends Component {
               name: this.state.name,
               destination: this.state.description,
               distance: this.state.selected,
-              typeAlarm: this.state.selectedMode  
+              destinyLat: this.state.latitude,
+              destinyLng: this.state.longitude,
+              locationLat: this.state.coords.lat,
+              locationLng: this.state.coords.lng
+              // typeAlarm: this.state.selectedMode  
             }]
       }
       
@@ -190,7 +208,7 @@ export default class NewRoute extends Component {
                             <Picker.Item label="700 metros" value={700} />
                           </Picker>
                       </Row>
-                      <Row style={{ alignItems: 'center' }}>
+                      {/* <Row style={{ alignItems: 'center' }}>
                           <Text>Tipo de alarme:</Text>
                           <Picker
                             note
@@ -202,7 +220,7 @@ export default class NewRoute extends Component {
                             <Picker.Item label="Vibrar" value={'key0'} />
                             <Picker.Item label="Vibrar e tocar" value={'key1'} />
                           </Picker>
-                      </Row>
+                      </Row> */}
                       <Row style={{justifyContent: 'center'}}>
                         <Button rounded style={styles.button} onPress={this.handleModal}>
                           <Text>Confirmar</Text>
@@ -236,7 +254,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20
   },
   containerTwo: {
-    height: 150,
+    height: 120,
     paddingHorizontal: 20
   },
   input: {

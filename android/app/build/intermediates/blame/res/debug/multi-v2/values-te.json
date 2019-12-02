@@ -4,6 +4,23 @@
             "outputFile": "/home/mateus/Documents/GitHub/NoPonto/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-te/values-te.xml",
             "map": [
                 {
+                    "source": "/home/mateus/.gradle/caches/transforms-2/files-2.1/09e7943934c85e7a01c282e34969c661/res/values-te/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "207",
+                        "endColumns": "100",
+                        "endOffsets": "307"
+                    },
+                    "to": {
+                        "startLines": "47",
+                        "startColumns": "4",
+                        "startOffsets": "5541",
+                        "endColumns": "104",
+                        "endOffsets": "5641"
+                    }
+                },
+                {
                     "source": "/home/mateus/.gradle/caches/transforms-2/files-2.1/69b432639e58630faf64a00cacf03ccd/res/values-te/values.xml",
                     "from": {
                         "startLines": "4",
@@ -18,6 +35,23 @@
                         "startOffsets": "5646",
                         "endColumns": "101",
                         "endOffsets": "5743"
+                    }
+                },
+                {
+                    "source": "/home/mateus/.gradle/caches/transforms-2/files-2.1/3f1dffe59cb32b94a830dad81b994f1e/res/values-te/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "198",
+                        "endOffsets": "445"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "3998",
+                        "endColumns": "198",
+                        "endOffsets": "4192"
                     }
                 },
                 {
@@ -38,23 +72,6 @@
                     }
                 },
                 {
-                    "source": "/home/mateus/.gradle/caches/transforms-2/files-2.1/e768110ab15cc11e322b9b4d6285e755/res/values-te/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "205",
-                        "endColumns": "100",
-                        "endOffsets": "305"
-                    },
-                    "to": {
-                        "startLines": "47",
-                        "startColumns": "4",
-                        "startOffsets": "5541",
-                        "endColumns": "104",
-                        "endOffsets": "5641"
-                    }
-                },
-                {
                     "source": "/home/mateus/.gradle/caches/transforms-2/files-2.1/f3b5895a5ed6bc5bf2b7694ad098f0e5/res/values-te/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
@@ -69,23 +86,6 @@
                         "startOffsets": "2864,2976,3162,3294,3411,3607,3734,3869,4197,4405,4519,4703,4833,5043,5236,5330,5430",
                         "endColumns": "111,185,131,116,195,126,134,128,207,113,183,129,209,192,93,99,110",
                         "endOffsets": "2971,3157,3289,3406,3602,3729,3864,3993,4400,4514,4698,4828,5038,5231,5325,5425,5536"
-                    }
-                },
-                {
-                    "source": "/home/mateus/.gradle/caches/transforms-2/files-2.1/06971f763626802f868ff067a04de764/res/values-te/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "198",
-                        "endOffsets": "445"
-                    },
-                    "to": {
-                        "startLines": "37",
-                        "startColumns": "4",
-                        "startOffsets": "3998",
-                        "endColumns": "198",
-                        "endOffsets": "4192"
                     }
                 },
                 {

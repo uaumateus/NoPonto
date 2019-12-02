@@ -38,23 +38,6 @@
                     }
                 },
                 {
-                    "source": "/home/mateus/.gradle/caches/transforms-2/files-2.1/06971f763626802f868ff067a04de764/res/values-hr/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "190",
-                        "endOffsets": "437"
-                    },
-                    "to": {
-                        "startLines": "37",
-                        "startColumns": "4",
-                        "startOffsets": "4007",
-                        "endColumns": "190",
-                        "endOffsets": "4193"
-                    }
-                },
-                {
                     "source": "/home/mateus/.gradle/caches/transforms-2/files-2.1/5b33a0b8f7ee607bd7550340b3b60dee/res/values-hr/values-hr.xml",
                     "from": {
                         "startLines": "2",
@@ -72,6 +55,40 @@
                     }
                 },
                 {
+                    "source": "/home/mateus/.gradle/caches/transforms-2/files-2.1/3f1dffe59cb32b94a830dad81b994f1e/res/values-hr/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "190",
+                        "endOffsets": "437"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "4007",
+                        "endColumns": "190",
+                        "endOffsets": "4193"
+                    }
+                },
+                {
+                    "source": "/home/mateus/.gradle/caches/transforms-2/files-2.1/09e7943934c85e7a01c282e34969c661/res/values-hr/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "207",
+                        "endColumns": "99",
+                        "endOffsets": "306"
+                    },
+                    "to": {
+                        "startLines": "47",
+                        "startColumns": "4",
+                        "startOffsets": "5513",
+                        "endColumns": "103",
+                        "endOffsets": "5612"
+                    }
+                },
+                {
                     "source": "/home/mateus/.gradle/caches/transforms-2/files-2.1/69b432639e58630faf64a00cacf03ccd/res/values-hr/values.xml",
                     "from": {
                         "startLines": "4",
@@ -86,23 +103,6 @@
                         "startOffsets": "5617",
                         "endColumns": "100",
                         "endOffsets": "5713"
-                    }
-                },
-                {
-                    "source": "/home/mateus/.gradle/caches/transforms-2/files-2.1/e768110ab15cc11e322b9b4d6285e755/res/values-hr/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "205",
-                        "endColumns": "99",
-                        "endOffsets": "304"
-                    },
-                    "to": {
-                        "startLines": "47",
-                        "startColumns": "4",
-                        "startOffsets": "5513",
-                        "endColumns": "103",
-                        "endOffsets": "5612"
                     }
                 }
             ]
