@@ -14,7 +14,7 @@ class App extends Component {
         this.notif = new NotifService(this.onRegister.bind(this), this.onNotif.bind(this));
     }
     componentDidMount = async () => {
-        // console.disableYellowBox = true;
+        console.disableYellowBox = true;
         const exist = await AsyncStorage.getItem('@NoPonto:ROUTES');
         if(exist !== null){
             let fences = JSON.parse(exist);
@@ -28,11 +28,12 @@ class App extends Component {
                 })
                 .then(() => console.warn("success!"))
                 .catch(e => console.warn("error :(", e));
-                Boundary.on(Events.ENTER, id => {
-                    this.notif.startPoint();
-                });
             }
+            Boundary.on(Events.ENTER, id => {
+                this.notif.startPoint(id);
+            });
         }
+        
     }
 
     onRegister(token) {
@@ -40,6 +41,8 @@ class App extends Component {
     }
     
     onNotif(notif) {
+        console.log("notif")
+        // this.notif.fenceActive();
     }
 
     render(){

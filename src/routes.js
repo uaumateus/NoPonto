@@ -3,11 +3,13 @@ import { createStackNavigator } from 'react-navigation-stack';
 
 import Home from './pages/Home';
 import NewRoute from './pages/NewRoute';
+import Modal from './components/Modals/SimpleModal';
 
 const Routes = createAppContainer(
     createSwitchNavigator({
         Home,
-        NewRoute
+        NewRoute,
+        Modal
     }, {
         headerMode: 'none',
         navigationOptions: {headerVisible: false,}

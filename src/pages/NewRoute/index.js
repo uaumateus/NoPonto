@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, Alert, AsyncStorage, Vibration } from 'react-native';
+import { View, StyleSheet, Alert, AsyncStorage, Vibration, ToastAndroid } from 'react-native';
 import { Container, Text, Item, Label, Input, Grid, Row, Col, Button, Form, Picker } from 'native-base';
 import Boundary, {Events} from 'react-native-boundary';
 import Geolocation from 'react-native-geolocation-service';
@@ -55,7 +55,7 @@ export default class NewRoute extends Component {
   };
 
   handleModalDestiny = () => {
-    this.setState({ showModalDestiny: true });
+    this.setState({ showModalDestiny: !this.state.showModalDestiny });
   };
 
   onChangeState = () => {
@@ -83,7 +83,8 @@ export default class NewRoute extends Component {
                         destinyLat: this.state.latitude,
                         destinyLng: this.state.longitude,
                         locationLat: this.state.coords.lat,
-                        locationLng: this.state.coords.lng
+                        locationLng: this.state.coords.lng,
+                        active: true
                         // typeAlarm: this.state.selectedMode  
                       })
               };
@@ -95,7 +96,8 @@ export default class NewRoute extends Component {
               destinyLat: this.state.latitude,
               destinyLng: this.state.longitude,
               locationLat: this.state.coords.lat,
-              locationLng: this.state.coords.lng
+              locationLng: this.state.coords.lng,
+              active: true
               // typeAlarm: this.state.selectedMode  
             }]
       }
@@ -121,10 +123,10 @@ export default class NewRoute extends Component {
         lat: latitude,
         lng: longitude,
         radius: this.state.selected, // metros
-        id: "Destination",
+        id: this.state.titleDestiny,
       })
-        .then(() => console.log("success!"))
-        .catch(e => console.error("error :(", e));
+        .then(() => ToastAndroid.show('Alarme ativo!', ToastAndroid.SHORT))
+        .catch(e => console.warn("error :(", e));
       Boundary.on(Events.ENTER, id => {
         this.notif.inDestiny(this.state.selected, this.state.titleDestiny);
       });
@@ -137,27 +139,23 @@ export default class NewRoute extends Component {
   }
 
   onNotif(notif) {
-    Vibration.cancel();
-    this.notif.cancelAll();
-    this.handleModalDestiny();
+    if(notif.title !== "Alarme Ativo"){
+      Vibration.cancel();
+      this.handleModalDestiny();
+      this.notif.cancelAll();
+    }
   }
 
   handlePerm(perms) {
     Alert.alert("Permissions", JSON.stringify(perms));
   }
-    
-  componentWillUnmount() {
-      // Remove os eventos
-      Boundary.off(Events.ENTER)
-
-      // Remove o bondary
-      Boundary.remove('Destination')
-          .then(() => console.log('Goodbye Destination :('))
-          .catch(e => console.log('Failed to delete Destination :)', e))
-  }
 
   changeDestiny = (e) => {
     this.setState({ titleDestiny: e });
+  }
+
+  componentWillUnmount() {
+    Boundary.off(Events.ENTER)
   }
 
   render() {

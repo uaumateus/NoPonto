@@ -19,11 +19,6 @@ class Toolbar extends Component {
                 <Image source={logo} style={styles.logo}/>
             </Body>
             <Right style={styles.rightContainer}>
-                {this.props.onPressRight &&
-                    <Button transparent onPress={this.props.onPressRight}>
-                        <Icon size={25} name="replay" style={{color: '#000'}}/>
-                    </Button>
-                }
             </Right>
         </Header>
     );
